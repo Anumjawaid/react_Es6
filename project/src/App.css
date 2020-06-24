@@ -1,0 +1,12 @@
+body{
+ background-color: cornflowerblue;
+}
+.box{
+  height:500px;
+  box-sizing: border-box;
+  box-shadow:2px 2px 2px 2px red;
+  text-align: center;
+}
+.daylight{
+  background-color: darkgoldenrod;
+}
