@@ -1,10 +1,10 @@
 // Functional Components
 import React from 'react'
 // In ES6 form
-const start = () =>{
+const start = (props) =>{
     return(
 
-    <h1> Begin To Learn React</h1>
+    <h1> Begin To Learn React{props.name}</h1>
     )
 }                  
 export default start

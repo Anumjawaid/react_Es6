@@ -8,8 +8,8 @@ function App() {
 
   return (
     <div className="box">
-      <My/>
-      <Start1/>
+      <My name=" functional class"/>
+      <Start1 name=" Start class"/>
      
     </div>
   );
