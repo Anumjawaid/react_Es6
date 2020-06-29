@@ -3,6 +3,7 @@ import My from './Functional'
 import Start1 from './class';
 import MSG from './hooksmessage'
 import HOOKS from './classhookmessage'
+import Counter from './counterclass'
 function App() {
   
 
@@ -13,6 +14,7 @@ function App() {
       <Start1 name=" Start class"/>
       <MSG/>
       <HOOKS/>
+      <Counter/>
 
      
     </div>
