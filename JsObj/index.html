@@ -4,16 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OBJECTS IN JS</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Learning Objects</h1>
-    <h3>How to create Objects</h3>
-    <p>obj={ <br>
-        fname:'Anum',<br>
-        lname:'Jawaid',<br>
-        Age :21,
-        <br>
-    }</p>
+    <table >
+        <th >Code</th>
+        <th >Results</th>
+        <tr>  <td > <h4>create Objects</h4>
+            <p>obj={ <br>
+                fname:'Anum',<br>
+                lname:'Jawaid',<br>
+                Age :21,
+                <br>
+            }</p>
+        </td>
+        <td id='o'>ReSults</td>
+        </tr>
+        <!-- 2nd -->
+        <tr>
+            <td><h4>accessing Single Property</h4>
+                <p>obj.fname </p>
+
+            </td>
+            <td id='p'></td>
+
+        </tr>
+        <!-- 3rd -->
+        <tr>  <td > <h4>creating Functions and calling them</h4>
+            <p>obj={ <br>
+                fname:'Anum',<br>
+                lname:'Jawaid',<br>
+                Age :21,<br>
+                intro: function intro(){<br>
+                    document.write("MY Name IS Anum")<br>
+                }
+                <br>
+
+            }
+            <br>obj.intro()
+        </p>
+        </td>
+        <td id ='q'></td>
+        </tr>
+
+    
+
+</table>
     <script src=app.js></script>
 </body>
 </html>
