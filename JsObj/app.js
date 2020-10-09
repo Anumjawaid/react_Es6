@@ -14,3 +14,11 @@ console.log("accessing single name",obj.fname)
 document.getElementById('p').innerHTML=obj.fname
 //console.log(obj.intro)
 obj.intro()
+obj.list=[1,2,3,4,5]
+var a='see result in console'
+document.getElementById('r').innerHTML=a
+console.log("adding a property to already made object ==> ",obj)
+delete obj.Age;
+document.getElementById('rr').innerHTML=("see result in console");
+console.log("deleting Object.Age property ",obj)
+
