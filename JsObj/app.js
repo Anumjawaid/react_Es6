@@ -6,6 +6,10 @@ obj={
         //document.write("MY Name IS Anum") Normally we will do that
         document.getElementById('q').innerHTML="MY Name IS Anum"
         console .log("My name is Anum")
+    },
+    hob:function(hobby){
+        document.getElementById('pq').innerHTML="My hobbie is "+hobby
+        console.log("My Hobbies are "+hobby)
     }
 }
 console.log("if we direct call obj ==> ",obj)
@@ -21,4 +25,5 @@ console.log("adding a property to already made object ==> ",obj)
 delete obj.Age;
 document.getElementById('rr').innerHTML=("see result in console");
 console.log("deleting Object.Age property ",obj)
+obj.hob('reading')
 
