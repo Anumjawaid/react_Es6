@@ -27,3 +27,5 @@ document.getElementById('rr').innerHTML=("see result in console");
 console.log("deleting Object.Age property ",obj)
 obj.hob('reading')
 
+
+
