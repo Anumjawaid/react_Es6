@@ -1,5 +1,7 @@
 body{
   background:linear-gradient(360deg,#55a630,#80b918,#687c05,#2b9348);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 table {
