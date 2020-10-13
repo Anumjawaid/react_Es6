@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constructor In Js</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Constructors</h1>
+    <table>
+        <tr>
+            <td>Properties</td>
+            <td>result</td>
+        </tr>
+        <tr>
+            <td><h4>Creating a Constructor</h4>
+            <p>Same as Creating a Function 
+                
+            </p></td>
+            <td><p>function Student(name,rollno){<br>
+                this.name=name;<br>
+                this.rollno=rollno <br>
+                }</p></td>
+        </tr>
+        <!-- 2nd -->
+        <tr>
+            <td><h4>Calling Student's Object <h4>
+                <p>student1=new Student("Anum",123) <br>
+                    student2=new Student("Fiza",124) <br>
+                See result in Console</p>
+            </td>
+            <td id='a'></td>
+        </tr>
+        <!-- 3rd -->
+        <tr><td><h4>creating a function inside constructor</h4>
+        <p>
+            function Student(name,rollno){<br>
+                this.name=name;<br>
+                this.rollno=rollno <br>
+                this.intro=function(){<br>
+                    var a=("My name is ",this.name + " and my roll no is",this.rollno)<br>
+                 return a;<br>
+                }<br>
+                }
+        </p>
+    </td>
+    <td><p>This function is created with every object everytime the object is called</p></td>
+</tr>
+    <!-- 3rd -->
+    <tr>
+        <td>
+            <h4>Prototypes Of function</h4>
+            <p>this creates a copy of the function reduces the redundancy of creating the function everytime 
+                with the object ,It will be created outside the constructor<br>
+                <h5>General Form <br> objectname.prototype.methodname=function(){}</h5>
+                <br>Student.prototype.intro=function(){
+                    var a=("My name is ",this.name + " and my roll no is",this.rollno) <br>
+                    return a <br>
+                } <br>console.log(student2)
+
+            </p>
+
+        </td>
+        <td>See result in console</td>
+    </tr>
+    </table>
+
+    <script src=app1.js></script>
+</body>
+</html>
