@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Properties Of Objects</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Properties of Objects In Js</h1>
+    <p>The Object We are Using Is <br> obj={ <br>
+        fname:'Anum', <br>
+        lname:'Jawaid', <br>
+        Age :21, <br>
+        intro:function (){ <br>
+            //document.write("MY Name IS Anum") Normally we will do that <br>
+            document.getElementById('q').innerHTML="MY Name IS Anum" <br>
+            console .log("My name is Anum") <br>
+        }, <br>
+        hob:function(hobby){ <br>
+            document.getElementById('pq').innerHTML="My hobbie is "+hobby <br>
+            console.log("My Hobbies are "+hobby) <br>
+        } <br>
+    }</p>
+    <br>
+    <table>
+        <tr>
+            <td>Code</td>
+            <td>Result</td>
+        </tr>
+        <tr>
+            <td> 
+                <h4>Finding if the Property exist in The Object</h4>
+                <p>Console.log("fname" in obj)</p>
+            </td>
+            <td id=b>true ==>if exists otherwise false <br>see result in console</td>
+        </tr>
+        <!-- 1.1 -->
+        <tr></tr>
+        <!-- 2nd -->
+        <tr>
+            <td>
+                <h4>For finding all the properties of an Object</h4>
+                <p>General Syntax is <br> for(anyvariable in Objectname) <br>
+                    for (o in obj){ <br>
+                    console.log(o) <br>
+                }</p>
+            </td>
+            <td>see Result in Console</td>
+        </tr>
+        <!-- 3rd -->
+        <tr>
+        <td>
+            <h4>For finding all the values of the properties of an Object</h4>
+            <p>General Syntax is <br> for(anyvariable in Objectname) <br>
+                for (o in obj){ <br>
+                console.log(o,obj[o]) <br>
+            }</p>
+        </td>
+        <td>See result in console</td>
+    </tr>
+    </table>
+    <button class="btcont"><a href='constructor.html'>CONSTRUCTOR</a></button>
+    <button class="btcont"><a href='index.html'>Objects</a></button>
+    <script src="app2.js"></script>
+    
+</body>
+</html>

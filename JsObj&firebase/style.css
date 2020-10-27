@@ -1,0 +1,17 @@
+body{
+  background:linear-gradient(360deg,#55a630,#80b918,#687c05,#2b9348);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #cc3333;
+    text-align: left;
+    padding: 8px;
+  }
