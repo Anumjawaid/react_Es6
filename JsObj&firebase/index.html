@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OBJECTS IN JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button ><a href='firebase.html'>FireBase</a></button>
+    <h1>Learning Objects</h1>
+    <table >
+        <th >Code</th>
+        <th >Results</th>
+        <tr>  <td > <h4>create Objects</h4>
+            <p>obj={ <br>
+                fname:'Anum',<br>
+                lname:'Jawaid',<br>
+                Age :21,
+                <br>
+            }</p>
+        </td>
+        <td id='o'>ReSults</td>
+        </tr>
+        <!-- 2nd -->
+        <tr>
+            <td><h4>accessing Single Property</h4>
+                <p>obj.fname </p>
+
+            </td>
+            <td id='p'></td>
+
+        </tr>
+        <!-- 3rd -->
+        <tr>  <td > <h4>creating Functions and calling them</h4>
+            <p>obj={ <br>
+                fname:'Anum',<br>
+                lname:'Jawaid',<br>
+                Age :21,<br>
+                intro: function intro(){<br>
+                    document.write("MY Name IS Anum")<br>
+                }
+                <br>
+
+            }
+            <br>obj.intro()
+        </p>
+        </td>
+        <td id ='q'></td>
+        </tr>
+        <!-- 4th -->
+        <tr>
+            <td>
+                <h4>Adding a Property in the above object</h4>
+                <p>obj.list=[1,2,3,4,5]
+                    
+                </p>
+
+            </td>
+            <td id="r"></td>
+        </tr>
+        <!-- 5th -->
+        <tr>
+            <td>
+                <h4>Deleting a value of Object</h4>
+                <p>delete obj.Age;</p>
+            </td>
+            <td id="rr"></td>
+        </tr>
+        <!-- 6th -->
+        <tr>
+            <td><h4>Adding a Method </h4>
+        <p>
+            obj={<br>
+                fname:'Anum',<br>
+                lname:'Jawaid',<br>
+                Age :21,<br>
+                intro:function (){<br>
+                    console .log("My name is Anum")<br>
+                },<br>
+                hob:function(hobby){<br>
+                    console.log("My Hobbies are "+hobby)<br>
+                }<br>
+            }<br>
+            by calling the function as <br>
+            obj.hob('reading')
+        </p>
+            </td>
+            <td id='pq'></td>
+        </tr>
+</table>
+      <button class="btcont"><a href='constructor.html'>CONSTRUCTOR</a></button>
+      <button class="btcont"><a href='pob.html'>Properties Of Objects</a></button>
+
+    <script src=app.js></script>
+</body>
+</html>
