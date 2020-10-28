@@ -1,3 +1,4 @@
+// alert("ASDFGHN")
 obj={
     fname:'Anum',
     lname:'Jawaid',
