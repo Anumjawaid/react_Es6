@@ -5,7 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Firebase</title>
     <link rel="stylesheet" href="style.css">
-    <script src=app3.js></script>
+    
+<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-database.js"></script>
+
+<script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+      apiKey: "AIzaSyDWdA8Ow7OYkLvPAYGyxjXaCLS6LwOd_PU",
+      authDomain: "registrationformassignment.firebaseapp.com",
+      databaseURL: "https://registrationformassignment.firebaseio.com",
+      projectId: "registrationformassignment",
+      storageBucket: "registrationformassignment.appspot.com",
+      messagingSenderId: "643747125332",
+      appId: "1:643747125332:web:5605197ec5b9209acd35c1",
+    //   measurementId: "G-7KSY98NYZ9"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    // firebase.analytics();
+  </script>
      
 </head>
 <body>
@@ -14,5 +34,7 @@
     <button onclick="Save()">Login</button>
 
     
+
 </body>
+<script src=app3.js></script>
 </html>
