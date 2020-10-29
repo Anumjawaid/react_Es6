@@ -5,6 +5,7 @@ import MSG from './hooksmessage'
 import HOOKS from './classhookmessage'
 import Counter from './counterclass'
 import Count from './hookcounter'
+import Basic from './basicclasscomp'
 function App() {
   
 
@@ -15,6 +16,10 @@ function App() {
       <h6>*************</h6>
      
       <Start1 name=" Start class"/>
+      <h6>*************</h6>
+      <Basic>
+
+      </Basic>
       <h6>*************</h6>
      
       <MSG/>
