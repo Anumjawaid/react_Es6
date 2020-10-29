@@ -8,9 +8,16 @@ class hooks extends Component{
         }
     }
     changemsg(){
+        if(this.state.message!=this.setState.message){
+            this.setState({
+                message:"OOHH You Done A Marvellous job \n Keep Going And For Heaven Sake Keep Up The Good Work"
+            })
+
+        }
+        else{
         this.setState({
-            message:"OOHH You Done A Marvellous job \n Keep Going And For Heaven Sake Keep Up The Good Work"
-        })
+            message:"TaDAaaa"
+        })}
     }
     render(){
         return(
