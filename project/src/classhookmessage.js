@@ -6,9 +6,10 @@ class hooks extends Component{
         this.state={
             message:"Welcome from class Hooks"
         }
+        
     }
     changemsg(){
-        if(this.state.message!=this.setState.message){
+        if(this.state.message!==this.setState.message){
             this.setState({
                 message:"OOHH You Done A Marvellous job \n Keep Going And For Heaven Sake Keep Up The Good Work"
             })
