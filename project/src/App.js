@@ -6,6 +6,7 @@ import HOOKS from './classhookmessage'
 import Counter from './counterclass'
 import Count from './hookcounter'
 import Basic from './basicclasscomp'
+import {Main,Image } from './multiplecomponents'
 function App() {
   
 
@@ -15,6 +16,9 @@ function App() {
       <My name=" functional class"/>
       <h6>*************</h6>
      
+      <Main />
+      <h6>*************</h6>
+      <Image />     
       <Start1 name=" Start class"/>
       <h6>*************</h6>
       <Basic>
