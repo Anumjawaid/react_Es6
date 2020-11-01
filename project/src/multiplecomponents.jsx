@@ -26,7 +26,8 @@ class States extends Component {
         super()
         this.state = {
             name: 'Anum Jawaid',
-            pw: '12346'
+            pw: '12346',
+            value:''
         }
         
     }
@@ -34,7 +35,7 @@ class States extends Component {
         // console.log("Runnnning")
         // console.log(this.state.name)
         this.setState({
-            name:'AJ'
+            name:this.state.value
         })
 
     }
@@ -43,9 +44,10 @@ class States extends Component {
             <div>
                 <h1>I Am from States</h1>
                 <h2>My Name is {this.state.name}</h2>
-                <input type='text' onChange={(e)=>this.setState({name:e.target.value})} placeholder='Enter your Name' />
-
-                <button  onClick={this.set_name} >Magic!!!!!!!!!</button>
+                {/* <input type='text' onChange={(e)=>this.setState({name:e.target.value})} placeholder='Enter your Name' ></input> this name changes the on real time */}
+                {/* <button  onClick={this.set_name} >Magic!!!!!!!!!</button> */}
+                <input type='text' onChange={(e)=>this.setState({value:e.target.value})} placeholder='Enter your Name' ></input>
+                <button onClick={this.set_name}></button>
             </div>
         )
     }
