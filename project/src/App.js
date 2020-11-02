@@ -10,16 +10,11 @@ import {Main,Image,States} from './multiplecomponents'
 function App() {
   
 
-
   return (
     <div className="box">
       <My name=" functional class"/>
       <h6>*************</h6>
-
-      
-
-     
-      <Main />
+      {/* <Main /> */}
       <h6>*************</h6>
       <Image />     
       <Start1 name=" Start class"/>
