@@ -28,6 +28,15 @@ class Todo extends React.Component{
             todos:this.state.todos
         })
     }
+    editodo = (ind) =>{
+        // console.log(ind)
+    //    var up=prompt("Enter Updated Valye")
+        this.state.todos[ind]=up
+        this.setState({
+            todos:this.state.todos
+        })
+
+    }
     render(){
         let{todos,value}=this.state;
         return(
@@ -39,6 +48,7 @@ class Todo extends React.Component{
                     {todos.map((v,i)=>{
                         return <li key={i}>{v}
                 <button onClick={()=>this.deltodo(i)}>Delete</button>
+                <button onClick={()=>this.editodo(i)}>Edit</button>
                         
                         </li>
                     })}
