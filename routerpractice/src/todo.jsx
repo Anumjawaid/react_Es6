@@ -9,12 +9,17 @@ class Todo extends React.Component{
         }
     }
     Add = () => {
-        this.state.todos.push(this.state.value)
-        // console.log(this.state.value)
+        // use this one OR
+        // this.state.todos.push(this.state.value)
+        // this.setState({
+        //      todos:this.state.todos,
+        //      value:' '
+        //  })
+        // use this spade one
         this.setState({
-             todos:this.state.todos,
-             value:' '
-         })
+            todos:[...this.state.todos,this.state.value]
+            ,value:' '
+        })
     }
     render(){
         let{todos,value}=this.state;
