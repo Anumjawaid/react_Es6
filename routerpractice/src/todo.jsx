@@ -18,7 +18,14 @@ class Todo extends React.Component{
         // use this spade one
         this.setState({
             todos:[...this.state.todos,this.state.value]
-            ,value:' '
+            ,value:''
+        })
+    }
+    deltodo = (ind) => {
+        // console.log(ind)
+        this.state.todos.splice(ind,1)
+        this.setState({
+            todos:this.state.todos
         })
     }
     render(){
@@ -30,7 +37,10 @@ class Todo extends React.Component{
                 <button onClick={this.Add}>Add Item</button>
                 <ul>
                     {todos.map((v,i)=>{
-                        return <li key={i}>{v}</li>
+                        return <li key={i}>{v}
+                <button onClick={()=>this.deltodo(i)}>Delete</button>
+                        
+                        </li>
                     })}
                 </ul>
 
