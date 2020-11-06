@@ -1,5 +1,6 @@
 const INITIAL_STATE={
-    name:'Anum'
+    name:'Anum',
+    Age:'a'
 }
 export default  (state=INITIAL_STATE)=>{
 
