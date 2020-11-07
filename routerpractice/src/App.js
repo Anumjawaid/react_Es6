@@ -7,20 +7,25 @@ import { connect } from 'react-redux'
 
 class App extends React.Component {
   render(){
-  console.log(this.props)
+  console.log("redux props",this.props)
   return (
     <div className="App">
      {/* <Todo/> */}
      {/* <Home /> */}
      <AppRouter />
+     {/* <button onClick={()=>this.props.set_data}>Set Data</button> */}
      
     </div>
     
   );
 }}
-const mapStateToProps = (state) => ({
+const mik = (state) => ({
   name:state.name,
   age:state.Age
   
 })
-export default connect(mapStateToProps,null)(App);
+const mapDispatchToProps = (dispatch) => ({
+  set_data : () => (console.log("Hello"))
+
+})
+export default connect(mik,mapDispatchToProps)(App);
