@@ -1,16 +1,16 @@
 import React,{useContext} from 'react'
 
 import context from './main'
-
+import ContHome from './conthome'
 function Consumer(){
-
-
+// var cont=useContext(context)
+var conte='ewjjsdndb'
     return(
         <>
-        <context.Consumer>
-        {value => <span>{value}</span>}
-        <h5>hike</h5>
-        </context.Consumer>
+        <context.Provider value={conte}>
+        <ContHome/>
+        
+        </context.Provider>
 
         </>
     )
