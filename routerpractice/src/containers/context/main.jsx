@@ -12,8 +12,8 @@ import { createContext } from "react";
 
 // }
 // export default Context;
-var a=[{0:'alpha'},{0:'beta'}]
-var b='my string'
-var c='fghj'
-var context=createContext([a,b,c])
+// var a=[{0:'alpha'},{0:'beta'}]
+// var b='my string'
+// var c='fghj'
+var context=createContext("ff")
 export default context;
