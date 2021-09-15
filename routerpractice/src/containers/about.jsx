@@ -1,5 +1,4 @@
-import React from 'react'
-
+import React, { useContext } from 'react'
 class About extends React.Component{
     constructor(){
         super()
@@ -7,6 +6,7 @@ class About extends React.Component{
     render(){
         return(
             <div>
+                
                 <h1>About coming..........</h1>
             </div>
         )
